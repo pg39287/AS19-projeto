@@ -1,0 +1,11 @@
+{
+  "name": "ess-trade",
+  "version": "1.0.0",
+  "description": "CFD trade platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "francisco saraiva",
+  "license": "ISC"
+}
