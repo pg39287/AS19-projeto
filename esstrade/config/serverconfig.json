@@ -1,4 +1,4 @@
 {
-    "database": "",
+    "database": "./database/database.json",
     "port": 7777
 }
