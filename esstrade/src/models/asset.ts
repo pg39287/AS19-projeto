@@ -1,4 +1,4 @@
-class Asset {
+export class Asset {
 
     /**
      * Attributes

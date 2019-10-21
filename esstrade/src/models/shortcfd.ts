@@ -1,4 +1,6 @@
 import { CFD } from "./cfd";
+import { Asset } from "./asset";
+import { User } from "./user";
 
 export class ShortCFD extends CFD {
 

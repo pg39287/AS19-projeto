@@ -1,4 +1,6 @@
 import { CFD } from "./cfd";
+import { Asset } from "./asset";
+import { User } from "./user";
 
 export class LongCFD extends CFD {
 
@@ -25,5 +27,5 @@ export class LongCFD extends CFD {
     /**
      * Methods
      */
-    
+
 }
