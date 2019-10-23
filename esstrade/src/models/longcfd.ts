@@ -4,7 +4,7 @@ import { User } from "./user";
 
 export class LongCFD extends CFD {
 
-    private BuyPrice: Number;
+    private BuyPrice: number;
 
     /**
      * 
@@ -19,7 +19,7 @@ export class LongCFD extends CFD {
      * @param Closed Flag that indicates the CFD is closed
      * @param BuyPrice Price that was set per unit of the asset at the start of the CFD
      */
-    constructor(Id: Number, Asset: Asset, User: User, Amount: Number, TakeProfit: Number, StopLoss: Number, StartDate: Date, EndDate: Date, Closed: Boolean, BuyPrice: Number) {
+    constructor(Id: number, Asset: Asset, User: User, Amount: number, TakeProfit: number, StopLoss: number, StartDate: Date, EndDate: Date, Closed: boolean, BuyPrice: number) {
         super(Id, Asset, User, Amount, TakeProfit, StopLoss, StartDate, EndDate, Closed);
         this.BuyPrice = BuyPrice;
     }

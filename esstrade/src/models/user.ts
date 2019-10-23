@@ -1,19 +1,22 @@
+import { CFD } from "./cfd";
+
 export class User {
 
     /**
      * Attributes
      */
-    private Id: Number;
-    private Username: Text;
-    private Password: Text;
-    private Email: Text;
-    private Name: Text;
-    private Gender: Text;
+    private Id: number;
+    private Username: string;
+    private Password: string;
+    private Email: string;
+    private Name: string;
+    private Gender: string;
     private Birthdate: Date;
-    private Balance: Number;
-    private TotalAllocated: Number;
-    private Profit: Number;
-    private Capital: Number;
+    private Balance: number;
+    private TotalAllocated: number;
+    private Profit: number;
+    private Capital: number;
+    private CFDs: Array<CFD>;
 
     /**
      * 
@@ -29,7 +32,7 @@ export class User {
      * @param Profit Total money made from trading CFDs
      * @param Capital Capital value of the user in the platform
      */
-    constructor(Id: Number, Username: Text, Password: Text, Email: Text, Name: Text, Gender: Text, Birthdate: Date, Balance: Number, TotalAllocated: Number, Profit: Number, Capital: Number) {
+    constructor(Id: number, Username: string, Password: string, Email: string, Name: string, Gender: string, Birthdate: Date, Balance: number, TotalAllocated: number, Profit: number, Capital: number, CFDs: Array<CFD>) {
         this.Id = Id;
         this.Username = Username;
         this.Password = Password;
@@ -41,14 +44,19 @@ export class User {
         this.TotalAllocated = TotalAllocated;
         this.Profit = Profit;
         this.Capital = Capital;
+        this.CFDs = CFDs;
     }
 
     /**
      * Methods
      */
 
-    public getUsername(): Text {
+    public getUsername(): string {
         return this.Username;
     }
 
+    public CalculateCapital(): number {
+        return 0;
+    }
+    
 }

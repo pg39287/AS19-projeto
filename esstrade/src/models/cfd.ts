@@ -6,15 +6,15 @@ export class CFD {
     /**
     * Attributes
     */
-    private Id: Number;
+    private Id: number;
     private Asset: Asset;
     private User: User;
-    private Amount: Number;
-    private TakeProfit: Number;
-    private StopLoss: Number;
+    private Amount: number;
+    private TakeProfit: number;
+    private StopLoss: number;
     private StartDate: Date;
     private EndDate: Date;
-    private Closed: Boolean;
+    private Closed: boolean;
     
     /**
      * 
@@ -28,7 +28,7 @@ export class CFD {
      * @param EndDate Date the CFD was ended
      * @param Closed Flag that indicates the CFD is closed
      */
-    constructor(Id: Number, Asset: Asset, User: User, Amount: Number, TakeProfit: Number, StopLoss: Number, StartDate: Date, EndDate: Date, Closed: Boolean) {
+    constructor(Id: number, Asset: Asset, User: User, Amount: number, TakeProfit: number, StopLoss: number, StartDate: Date, EndDate: Date, Closed: boolean) {
         this.Id = Id;
         this.Asset = Asset;
         this.User = User;
@@ -43,5 +43,9 @@ export class CFD {
     /**
      * Methods
      */
+
+     public CloseCFD(): void {
+         
+     }
 
 }
