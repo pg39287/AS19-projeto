@@ -51,12 +51,25 @@ export class User {
      * Methods
      */
 
-    public getUsername(): string {
-        return this.Username;
+    public GetUserDetails(): object {
+        return {
+            Username: this.Username,
+            Email: this.Email,
+            Name: this.Name,
+            Balance: this.Balance,
+            TotalAllocated: this.TotalAllocated,
+            Profit: this.Profit,
+            Capital: this.Capital,
+            CFDs: this.CFDs
+        };
     }
 
     public CalculateCapital(): number {
         return 0;
     }
-    
+
+    public CheckBalance(): number {
+        return 0;
+    }
+
 }

@@ -3,8 +3,8 @@ export class AssetType {
     /**
      * Attributes
      */
-    Id: number;
-    Name: string;
+    private Id: number;
+    private Name: string;
 
     /**
      * 
