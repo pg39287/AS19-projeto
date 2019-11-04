@@ -1,48 +1,22 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinTable } from "typeorm";
 import { CFD } from "./cfd";
 
-@Entity("User")
 export class User {
 
     /**
      * Attributes
      */
-    @PrimaryGeneratedColumn()
     private Id: number;
-
-    @Column({ name: "Username" })
     private Username: string;
-
-    @Column({ name: "Password" })
     private Password: string;
-
-    @Column({ name: "Email" })
     private Email: string;
-
-    @Column({ name: "Name" })
     private Name: string;
-
-    @Column({ name: "Gender" })
     private Gender: string;
-
-    @Column({ name: "Birthdate" })
     private Birthdate: Date;
-
-    @Column({ name: "Balance" })
     private Balance: number;
-
-    @Column({ name: "TotalAllocated" })
     private TotalAllocated: number;
-
-    @Column({ name: "Profit" })
     private Profit: number;
-
-    @Column({ name: "Capital" })
     private Capital: number;
-
-    //@OneToMany(() => CFD, cfd => cfd.GetUser())
-    //@JoinTable()
-    private CFDs: CFD[];
+    private CFDs: Array<CFD>;
 
     /**
      * 
@@ -88,6 +62,14 @@ export class User {
             Capital: this.Capital,
             CFDs: this.CFDs
         };
+    }
+
+    public CalculateCapital(): number {
+        return 0;
+    }
+
+    public CheckBalance(): number {
+        return 0;
     }
 
 }

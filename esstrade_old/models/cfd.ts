@@ -44,8 +44,8 @@ export class CFD {
      * Methods
      */
 
-    public GetUser(): User {
-        return this.User;
+    public CloseCFD(): void {
+
     }
 
 }
